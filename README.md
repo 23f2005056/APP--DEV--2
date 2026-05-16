@@ -1,30 +1,78 @@
-# Flask-VueJs-Grocery App 🎓
-This repo is for mad2 full stack application using flask and Vue. These 7 days bootcamp will guide how to create full stack grocery app using flask &amp; Vue along with supporting libraries.
+# Influencer Engagement & Sponsorship Coordination Platform - V2
 
-_Flask + Vue.js Web Application Template_
+## Overview
+The Influencer Engagement & Sponsorship Coordination Platform - V2 is a full-stack web application developed using Flask APIs and Vue.js frontend. The platform connects Sponsors and Influencers for managing sponsorship campaigns, ad requests, and collaborations efficiently. It also includes caching, asynchronous batch jobs, role-based access control, and automated reporting features.
 
-![Vue Logo](https://th.bing.com/th?id=ODLS.2e71af61-6a5a-4385-b77e-f1eab9a9f6d8&w=32&h=32&qlt=90&pcl=fffffa&o=6&pid=1.2 "Vue Logo") ![Flask Logo](https://th.bing.com/th?id=ODLS.7a7db47c-c4b0-4347-bc92-476c1ec4d82c&w=32&h=32&qlt=90&pcl=fffffa&o=6&pid=1.2 "Flask Logo")
+---
 
-## Table of Contents
+## Features
 
-<!--ts-->
-   * [Getting started](#getting-started) 
-        * [Tools](#tools)
-        * [Frameworks](#frameworks)
-<!--te-->
+### Admin
+- Monitor users, campaigns, and ad requests
+- Approve sponsor registrations
+- Flag inappropriate users or campaigns
+- View platform analytics and statistics
+- Manage overall platform activities
 
-## Getting started
-### Tools
-* Install WSL `Only for windows users(download WSL2 with default linux distribution). Mac and Linux user can skip this` [visit link to download and setup](https://learn.microsoft.com/en-us/windows/wsl/install)
-* Git `latest stable version`[visit link to download and setup](https://git-scm.com/)
-* VS Code `with extensions` [Vue-Official, Live Share, WSL]
-* Nodejs `For windows users:install for wsl` [visit link to download and setup](https://nodejs.org/en/download/package-manager)
-<img src="node-version.png" width="300" height="100" />
-* Vite `command line build tool` [visit link install](https://vite.dev/guide/)
-* Vue Devtools `Search in browser web store and add the extension`
+### Sponsors
+- Create, update, and delete campaigns
+- Search influencers based on niche and reach
+- Send and manage ad requests
+- Export campaign details as CSV
+- Track campaign performance
 
-### Frameworks
-* VueJS `Vue3 Options API` [link](https://vuejs.org/)
-* Vue Router `v^4` [link](https://router.vuejs.org/introduction.html)
-* PrimeVue `v^4` [link](https://primevue.org/introduction/)
-* Bootstrap `v^5` [link](https://getbootstrap.com/)
+### Influencers
+- View public campaigns
+- Accept or reject ad requests
+- Negotiate sponsorship payments
+- Update profile information
+- Receive daily reminders for pending requests
+
+---
+
+## Tech Stack
+
+### Backend
+- Python
+- Flask
+- Flask REST APIs
+- SQLite
+- Redis
+- Celery
+
+### Frontend
+- Vue.js
+- Bootstrap
+- HTML5
+- CSS3
+- JavaScript
+
+### Additional Tools
+- JWT Authentication / Flask Security
+- ChartJS
+- Async Background Jobs
+
+---
+
+## Project Structure
+
+```bash
+project-root/
+│
+├── backend/
+│   ├── app.py
+│   ├── models.py
+│   ├── api/
+│   ├── tasks/
+│   └── requirements.txt
+│
+├── frontend/
+│   ├── src/
+│   ├── components/
+│   ├── views/
+│   └── router/
+│
+├── static/
+├── templates/
+├── redis/
+└── README.md
